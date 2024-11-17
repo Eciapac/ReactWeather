@@ -1,0 +1,96 @@
+.header{
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 30px;
+        input{
+            background: rgba(71, 147, 255, 0.2);
+            border-radius: 10px;
+            width: 194px;
+            padding: 9px 20px;
+            color: black;
+            font-weight: 500;
+            font-size: 16px;
+            &::placeholder{
+                color: black;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-left{
+            position: relative;
+            box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 400px;
+            width: 100%;
+            height: 311px;
+            h1{
+                font-size: 96px;
+                font-weight: 500;
+                color: #4793FF;
+            }
+            h2{
+                font-size: 40px;
+                margin-bottom: 31px;
+            }
+            p{
+                font-size: 25px;
+                margin-bottom: 14px;
+                color: #939CB0;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+            img{
+                position: absolute;
+                top: 46px;
+                right: 20px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+        &-right{
+            max-width: 750px;
+            width: 100%;
+            padding: 42px 32px;
+            box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+            border-radius: 20px;
+            height: 311px;
+            background: url(../../assets/images/cloud.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            &-list{
+                display: flex;
+                flex-direction: column;
+                row-gap: 22px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                    h3{
+                        width: 96px;
+                        font-size: 14px;
+                        color: #939cb0;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    div{
+                        box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+                        width: 38px;
+                        height: 38px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
